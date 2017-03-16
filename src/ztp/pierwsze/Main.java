@@ -46,7 +46,7 @@ public class Main {
             showLostAnimals(animals);
             Animal animal = peekAnimal();
 
-            while (distanceFromOwner(animal) != 0.0) {
+            while (animal.getPositon().countDistance(animal.getOwner().getPosition()) != 0.0) {
                 System.out.println("Odległość od właściciela: " + String.format( "%.2f", distanceFromOwner(animal) ));
 
                 System.out.print("Podaj kierunek ruchu (N, S, W, E): ");
