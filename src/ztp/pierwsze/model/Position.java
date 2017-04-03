@@ -4,6 +4,7 @@ package ztp.pierwsze.model;
  * Created by Damian on 2017-03-16.
  */
 
+//
 // polimorfizm typów: ograniczeniowy - klasa generyczna
 public class Position <T extends Number> {
 
